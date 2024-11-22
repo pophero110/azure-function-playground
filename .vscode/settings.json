@@ -1,0 +1,9 @@
+{
+  "azureFunctions.javaBuildTool": "gradle",
+  "azureFunctions.deploySubpath": "build/azure-functions/azure_function-1732243381510",
+  "azureFunctions.projectLanguage": "Java",
+  "azureFunctions.projectRuntime": "~4",
+  "debug.internalConsoleOptions": "neverOpen",
+  "azureFunctions.preDeployTask": "package (functions)",
+  "java.configuration.updateBuildConfiguration": "automatic"
+}
