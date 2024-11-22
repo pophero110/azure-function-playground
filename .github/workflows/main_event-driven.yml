@@ -31,11 +31,14 @@ jobs:
         run: ./gradlew build
         shell: bash
 
+      - name: "List files in package directory"
+        run: ls -la ${{ env.PACKAGE_DIRECTORY }}
+
       - name: "Run Azure Functions Action"
         uses: Azure/functions-action@v1
         id: fa
         with:
-          app-name: "event-driven"
+          app-name: "${{ env.AZURE_FUNCTIONAPP_NAME }}"
           slot-name: "Production"
           package: "${{ env.PACKAGE_DIRECTORY }}"
           respect-pom-xml: true
