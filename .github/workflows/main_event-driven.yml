@@ -11,7 +11,7 @@ on:
 
 env:
   AZURE_FUNCTIONAPP_NAME: event-driven # set this to your function app name on Azure
-  PACKAGE_DIRECTORY: "./target" # set this to the directory containing the compiled JAR
+  PACKAGE_DIRECTORY: "./build/azure-functions" # set this to the Gradle build output directory
   JAVA_VERSION: 17 # set this to the java version to use
 
 jobs:
